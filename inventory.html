@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Облік</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Облік майна</h1>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про нас</a>
+            <a href="contacts.html">Контакти</a>
+            <a href="inventory.html">Облік</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Таблиця обліку</h2>
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Назва</th>
+                        <th>Кількість</th>
+                        <th>Інв. номер</th>
+                        <th>Дії</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Динамічні дані -->
+                </tbody>
+            </table>
+            <button onclick="addRow()">Додати</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Складський облік. Усі права захищено.</p>
+    </footer>
+</body>
+</html>

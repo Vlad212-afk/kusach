@@ -1,0 +1,180 @@
+/* Загальні стилі - новий, сучасний вигляд */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    background-color: #eaeff1;
+}
+
+header {
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Основна секція */
+main {
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 40px auto;
+}
+
+/* Секція новин */
+.news-section {
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.news-item {
+    background: #f5f7fa;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.news-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.news-item h3 {
+    margin: 15px 0;
+    color: #e52e71;
+    font-size: 1.5em;
+}
+
+.news-item p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 1em;
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Кнопки */
+button {
+    padding: 15px 30px;
+    background-color: #ff8a00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e52e71;
+    transform: translateY(-3px);
+}
+
+/* Таблиця */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 40px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    text-align: left;
+    font-size: 1em;
+}
+
+th {
+    background: #ff8a00;
+    color: #fff;
+    font-weight: bold;
+}
+
+td {
+    background: #ffffff;
+}
+
+/* Футер */
+footer {
+    background: linear-gradient(45deg, #e52e71, #ff8a00);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 1em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Мобільна адаптація */
+@media (max-width: 768px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav a {
+        margin: 10px 0;
+    }
+
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+}
